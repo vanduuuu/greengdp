@@ -16,7 +16,7 @@ const Map_section = () => {
           <h1><span>Countries Using</span> Green GDP</h1>
           </div>
         </marquee>
-      <img src="../images/worldmapp.png" alt="map"/>
+      <img src="https://webpagecdnstorage.blob.core.windows.net/greengdp/worldmapp.png" alt="map"/>
       <div className="pin usa"></div>
       <div className="hover-content usa-hover"><span>USA</span> <br/> <p>The USA has developed detailed environmental-economic accounts to show the link between the economy and the environment, but it doesn't have a single Green GDP measurement.</p></div>
 
