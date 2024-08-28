@@ -1,0 +1,67 @@
+footer .btnnn button{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-image: linear-gradient(to bottom right, #000000, #3678d5);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:50px;
+    margin-top:20px;
+}
+
+.social2 li {
+    display: inline-block;
+    /* margin-right: 10px; */
+    transition: transform 0.3s ease-in-out;
+    max-width:50px;
+}
+.social2 li a {
+    display: block;
+    padding: 10px; /* Adjust padding as needed */
+    border: 2px solid transparent; /* Initially transparent border */
+}
+.social2 li a img{
+    width:100%;
+    height:100%;
+}
+.social2 li a:hover {
+    border-color: #3e5a00;
+    padding: 12px; /* Add padding on hover */
+    border-radius: 50%;
+    background-color: #eef5b9;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.social2 li a:hover img {
+    transform: scale(1.6); /* Zoom effect on hover */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    width:100%;
+
+}
+
+.social2 li a:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid rgba(255, 0, 0, 0.5); /* Faint red border */
+    pointer-events: none; /* Ensures the border does not interfere with hover */
+}
+@media(max-width:600px){
+    footer .btnnn button {
+        font-size: 9px;
+        font-weight: 500;
+        padding: 10px;
+    }
+    footer {
+        padding: 37px 11px !important;
+    }
+    .social2 li {
+        margin-right: -20px;
+    }
+}

@@ -1,0 +1,267 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;  
+      position: fixed;
+    width: 100%;
+    z-index: 999;
+    /* box-shadow: 0 15px 15px rgba(17, 17, 17, 0.5); */
+        background:white
+}
+
+.logo img {
+    max-height: 100px; /* Adjust logo size */
+}
+
+.socialLinks ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialLinks li {
+    margin-left: 15px; /* Space between social icons */
+}
+
+.socialLinks a {
+    text-decoration: none;
+}
+.socialLinks ul li a i {
+    background: #116809;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px 0 2px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    width: 40px;
+    color:white;
+}
+.socialLinks ul li:hover i{
+    transform: scale(1.2);
+}
+
+.wrapper1{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+position: relative;
+  }
+  .wrapper1 video {
+    z-index: -1;
+    width: 100%;
+}
+.wrapper1 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    overflow: hidden;
+}
+  .wrapper1 .world {
+    overflow: hidden;
+    width: 100vw; /* Adjust as needed */
+    height: 100vh; /* Adjust as needed */
+}
+
+.wrapper1 .world img {
+    width: 100%; /* Ensure the image fills the container */
+    animation: slideInf 5s forwards;
+}
+@keyframes slideInf {
+    from {
+      transform: translateX(200%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+.wrapper1 .world{
+position: absolute;
+display:flex;
+width:500px;
+height:500px;
+background: url('https://webpagecdnstorage.blob.core.windows.net/greengdp/world.jpg');
+background-size: cover;
+background-repeat: repeat-x;
+border-radius: 50%;
+box-shadow:inset 0 0 30px rgba(0,0,0,1.9),0 0 60px #235695;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+animation:animate 25s linear infinite;
+}
+.wrapper1::after{
+    content:"GDP";
+    height:20px;
+    width:100px;
+    display: block;
+    position: absolute;
+    right:28%;
+    top:40%;
+    font-size: 5vw;
+    color:#469100;
+    animation: slideIn 2s forwards;
+    font-family: "Abril Fatface", serif;
+    font-weight:bolder;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(200%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+.wrapper1::before{
+    content:"GREEN";
+    height:20px;
+    width:100px;
+    display: block;
+    position: absolute;
+    left:16%;
+    top:40%;
+    font-size: 5vw;
+    color:#469100;
+    animation: slideOut 2s forwards;
+font-family: "Abril Fatface", serif;
+    font-weight:bolder;
+}
+@keyframes slideOut {
+    from {
+      transform: translateX(-200%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+.wrapper1 .world:before{
+    position:absolute;
+    content:'';
+    width:100%;
+    height:100%;
+    background: url('https://webpagecdnstorage.blob.core.windows.net/greengdp/cloud.png');
+    overflow: hidden;
+    background-size: cover;
+    background-repeat:repeat-x;
+    border-radius: 50%;
+    animation:animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 1000px 0;
+    }
+}
+.wrapper1 .world img{
+    position: absolute;
+    width:100px;
+    transition: 0.6s;
+    pointer-events: none;
+}
+.wrapper1 .world:active{
+    transform: scale(3);
+}
+.wrapper1 .world:active img:hover{
+    transform: scale(0.6);
+}
+.title-box1{
+    position: absolute;
+    background-color: transparent;
+    bottom:3%;
+color: #ffffff;
+}
+.title-box1 span{
+    color:#4f9100;
+    font-size:60px;
+}
+
+/* responsive css */
+@media (max-width:600px){
+    .logo img {
+        max-height: 75px;
+    }
+    .socialLinks ul li a i {
+        height: 30px;
+        margin: 0px;
+        width: 30px;
+        line-height: 31px;
+    }
+.wrapper1 .world 
+{
+    width: 318px;
+    height: 318px;
+}
+.title-box1 h2{
+    font-size:20px;
+    /* padding:0 30px; */
+}
+.title-box1 span{
+    font-size:20px!important;
+}
+.title-box1{
+    bottom:9%;
+}
+.wrapper1::before{
+    left: 3%!important;
+    top: 18%!important;
+    font-size: 15vw!important;
+}
+.wrapper1::after {
+    right: 11%!important;
+    top: 18%!important;
+    font-size: 15vw!important;
+    }
+    .title-box1{
+        padding:0px 20px!important;
+    }
+    .wrapper1 .world {
+        width: 272px;
+        height: 272px;
+    }
+}
+@media (max-width:768px){
+    .wrapper1::after {
+        right: 7%;
+        top: 18%;
+        font-size: 7vw;
+    }
+    .wrapper1::before {
+        left: 3%;
+        top: 19%;
+        font-size: 6vw;
+    }
+   .title-box1 {
+            padding: 10px 100px;
+            text-align: center;
+        }
+        .title-box1 span {
+            font-size: 50px;
+        }
+}
+@media (min-width: 770px) and (max-width: 1024px){
+    .title-box1 {
+        padding: 10px 100px;
+        text-align: center;
+    }
+    .wrapper1::after {
+        right: 12%;
+        top: 48%;
+        font-size: 5vw;
+    }
+        .wrapper1::before {
+            left: 4%;
+            top: 48%;
+            font-size: 5vw;
+        }
+}
