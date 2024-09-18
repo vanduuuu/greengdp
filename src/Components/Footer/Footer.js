@@ -5,98 +5,60 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <div class="btnnn">
+      <img src="https://webpagecdnstorage.blob.core.windows.net/greengdp/logo.png" className="g-logo" alt="foot-logo"></img>
+
           <Link to="/contact">
-            <button class="btn">JOIN THE MISSION</button>
+ <button class="btn">JOIN THE MISSION</button>
           </Link>
-          <h4 class="text-white">GREEN GDP</h4>
-        </div>
+        
+       
         <div>
-          <ul class="social2">
-            <li>
-              <Link
-                to="https://twitter.com/i/flow/login?redirect_after_login=%2Fprecision_grow"
-                target="_blank"
-              >
-                <img
-                  src="https://precisiongrow.co.in/assets/img/twitter.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://www.facebook.com/PrecisionGrow/?show_switched_toast=0&amp;show_invite_to_follow=0&amp;show_switched_tooltip=0&amp;show_podcast_settings=0&amp;show_community_review_changes=0&amp;show_community_rollback=0&amp;show_follower_visibility_disclosure=0"
-                target="_blank"
-              >
-                <img
-                  src="https://precisiongrow.co.in/assets/img/fb.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://www.instagram.com/electronic_crop/"
-                target="_blank"
-              >
-                <img
-                  src="https://precisiongrow.co.in/assets/img/insta.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://www.linkedin.com/company/electronic-crop/"
-                target="_blank"
-              >
-                <img
-                  src="https://precisiongrow.co.in/assets/img/linkdin.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://www.youtube.com/channel/UCt1nu8YiUMjnvckNLfepa5g"
-                target="_blank"
-              >
-                <img
-                  src="https://precisiongrow.co.in/assets/img/ytb.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="https://precisiongrowindia.blogspot.com/"
-                target="_blank"
-              >
-                <img
-                  src="https://precisiongrow.co.in/assets/img/blog.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                <img
-                  src="https://precisiongrow.co.in/assets/img/flicker.png"
-                  target="_blank"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-            <li>
-              <Link to="https://on.soundcloud.com/BTa2Q" target="_blank">
-                <img
-                  src="https://precisiongrow.co.in/assets/img/soundcloud.png"
-                  alt="" loading="lazy"
-                />
-              </Link>
-            </li>
-          </ul>
+
+           <div className="socialLinks">
+                  <ul>
+                    <li>
+                      <Link to="https://www.facebook.com/PrecisionGrow/">
+                        <i className="fab fa-facebook-f"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://x.com/i/flow/login?redirect_after_login=%2Fprecision_grow">
+                      <i class="fa-brands fa-square-x-twitter"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://www.linkedin.com/company/precision-grow/">
+                        <i className="fab fa-linkedin-in"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://www.instagram.com/precisiongrow_/">
+                        <i className="fab fa-instagram"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://www.youtube.com/channel/UCt1nu8YiUMjnvckNLfepa5g">
+                        <i class="fa-brands fa-youtube"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://precisiongrowindia.blogspot.com/">
+                        <i class="fa-brands fa-blogger-b"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://precisiongrow.co.in/">
+                        <i class="fa-brands fa-flickr"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="https://soundcloud.com/precision-grow?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+                        <i class="fa-brands fa-soundcloud"></i>
+                      </Link>
+                    </li>
+                    
+                  </ul>
+                </div>
         </div>
       </footer>
     </div>

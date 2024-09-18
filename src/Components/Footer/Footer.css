@@ -11,46 +11,47 @@ footer{
     padding:50px;
     margin-top:20px;
 }
-
-.social2 li {
-    display: inline-block;
-    /* margin-right: 10px; */
-    transition: transform 0.3s ease-in-out;
-    max-width:50px;
+.g-logo {
+    width: 13%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
 }
-.social2 li a {
+.socialLinks ul li a i {
     display: block;
-    padding: 10px; /* Adjust padding as needed */
-    border: 2px solid transparent; /* Initially transparent border */
-}
-.social2 li a img{
-    width:100%;
-    height:100%;
-}
-.social2 li a:hover {
-    border-color: #3e5a00;
-    padding: 12px; /* Add padding on hover */
+    margin: 0 2px;
+    width: 40px;
+    height: 40px;
+    background: #fafafa;
     border-radius: 50%;
-    background-color: #eef5b9;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-right: 5px;
+    line-height: 40px;
+    transition: all 0.3s ease-in-out;
 }
-
-.social2 li a:hover img {
-    transform: scale(1.6); /* Zoom effect on hover */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
-    width:100%;
-
+.socialLinks ul li a .fa-facebook-f {
+    color: #4267b2;
 }
-
-.social2 li a:hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid rgba(255, 0, 0, 0.5); /* Faint red border */
-    pointer-events: none; /* Ensures the border does not interfere with hover */
+.socialLinks ul li a .fa-square-x-twitter {
+    color: #050505;
+}
+.socialLinks ul li a .fa-linkedin-in {
+    color: #0177b5;
+}
+.socialLinks ul li a .fa-instagram {
+    color: #dd5044;
+}
+.socialLinks ul li a .fa-youtube {
+    color: #fd1702;
+}
+.socialLinks ul li a .fa-blogger-b {
+    color: #eeb108;
+}
+.socialLinks ul li a .fa-flickr {
+    color: #e4137c;
+}
+.socialLinks ul li a .fa-soundcloud {
+    color: #f55300;
 }
 @media(max-width:600px){
     footer .btnnn button {
@@ -61,7 +62,5 @@ footer{
     footer {
         padding: 37px 11px !important;
     }
-    .social2 li {
-        margin-right: -20px;
-    }
+  
 }
